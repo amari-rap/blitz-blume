@@ -1,0 +1,300 @@
+/* GENERELL */
+:root {
+   --tuerkis: #3db7ae;
+   --dunkel-blau: #003e4e;
+   --hell-blau: #B1E7E6;
+   --gelb: #f7e81e;
+ }
+ 
+html {
+   font-size: 16px;
+   font-family: 'Myriad Pro', sans-serif;
+ }
+
+h2, h3 {
+  color: #003e4e;
+ }
+
+h2 {
+  color:#003e4e;
+  border-bottom: 3px #3db7ae solid;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #3db7ae;
+  font-weight: lighter;
+}
+
+h5 {
+  font-weight: lighter;
+}
+
+ /* NAVIGATION */
+nav {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  position: relative;
+  border-bottom: 10px solid #003e4e;
+  justify-content: center;
+  margin-bottom: 20px;
+ }
+
+nav ul>li {
+   display: inline-block;
+   margin-right: 50px;
+   color: #3db7ae;
+ }
+
+nav ul>li:hover {
+   display: inline-block;
+   color: #003e4e;
+ }
+
+.logo { 
+   width: 15%;
+   max-height: 100px;
+   margin-right: 50px;
+ }
+
+/* VISITENKARTE */
+ .con-1 {
+   display: flex;
+   width: 80%;
+   justify-content: center;
+   margin-left: 130px;
+   margin-bottom: 20px;
+ }
+
+.con-1 img {
+   width: 100%;
+   display: inline-block;
+ }
+
+ /* LEISTUNGEN */
+ .leistungen {
+  margin-top: 40px;
+ }
+
+.con-2 {
+   width: 100%;
+   display: flex;
+   position: relative;
+   flex-direction: row; 
+   align-items: baseline;
+ }
+
+.leist{
+   display: flex;
+   flex-direction: row;
+   width: 50%;
+   justify-content: space-evenly;
+   align-items: center;
+ }
+
+.leist h3 {
+   color:#003e4e;
+}
+
+.leist h4 {
+   color:#3db7ae;
+   font-weight: lighter;
+}
+
+.leist-bild {
+   width: 25%;
+ }
+
+
+.h-leistungen-1 {
+  margin-left: 20px;
+}
+
+ /* AKTUELLES */
+.aktuelles {
+  margin-top: 40px;
+}
+
+.con-3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.akt,
+.akt-r {
+   background-color: #B1E7E6;
+   border-radius: 20px;
+   display: flex;
+   flex-direction: row;
+   margin-top: 10px;
+   width: 60%;
+   margin-bottom: 10px;
+   align-items: center;
+ }
+
+.akt img,
+.akt-r img {
+  width: 50%;
+  max-height: 300px;
+}
+
+.akt img {
+  margin-left: 10px;
+}
+
+.akt-r img {
+  margin-right: 10px;
+}
+
+.akt-r {
+  align-self: flex-end;
+}
+
+.akt-text1,
+.akt-text2,
+.akt-text3 {
+  margin-right: 25px;
+}
+
+.akt-text2 {
+  margin-left: 25px;
+}
+
+
+/* TERMINE */
+#termin-form input,
+#termin-form textarea {
+  width: 100%;
+  border: 2px solid #3db7ae;
+  border-radius: 20px;
+  padding: .5rem;
+  color:#003e4e;
+  font-family: 'Myriad Pro', sans-serif;
+}
+
+.row,
+.col-2,
+.col {
+  margin-top: 20px;
+}
+
+#termin-form textarea {
+  height: 100px;
+}
+
+#termin-form input:hover,
+#termin-form textarea:hover {
+  box-shadow: 5px #3db7ae;
+}
+
+#termin-form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #3db7ae;
+  border-radius: 20px;
+  border: 2px solid #3db7ae;
+  width: 100px;
+  height: 30px;
+}
+
+.btn:hover {
+  background-color: #003e4e;
+  border-color: #003e4e;
+}
+
+/*FOOTER*/
+footer {
+  display: inline-flex;
+  height: 150px;
+  width: 100%;
+  position: relative;
+  border-top: 10px solid #003e4e;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.con-f1 {
+  display: flex;
+  flex-direction: column;
+  max-height: 100px;
+  margin-top: 20px;
+}
+
+footer h5{
+    display: block;
+    margin-block-start: 0px !important;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+footer h4 {
+  display: block;
+    margin-block-start: 0px !important;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer h3 {
+  display: flex;
+    margin-block-start: 0px !important;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.con-f2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.impressum,
+.datenschutz {
+  padding-bottom: 15px;
+}
+
+.impressum:hover,
+.datenschutz:hover {
+  color:#3db7ae;
+}
+
+.con-f3 {
+  display: inline-flex;
+  max-height: 60px;
+  justify-content: space-evenly;
+  align-self: stretch;
+  margin-top: 20px;
+}
+
+.fb, 
+.insta, 
+.tw {
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
